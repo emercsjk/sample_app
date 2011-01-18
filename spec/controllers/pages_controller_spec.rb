@@ -1,3 +1,5 @@
+# Testen mit RSpec ist echt cool!
+
 require 'spec_helper'
 
 describe PagesController do
