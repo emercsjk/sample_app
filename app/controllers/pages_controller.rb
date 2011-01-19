@@ -12,7 +12,8 @@ class PagesController < ApplicationController
   end
 
   def report
-    @count = 1000;
+    @rowsCount = 666
+    @title = "Reporting #{@rowsCount} rows"
   end
 
 end
