@@ -11,4 +11,8 @@ class PagesController < ApplicationController
     @title = "About"
   end
 
+  def report
+    @count = 1000;
+  end
+
 end
