@@ -113,9 +113,9 @@ function drawFilter(_pos) {
 		var fString = "<img src='";
 
 		if (filter[_pos].value)
-			fString += "images/tick.png";
+			fString += "/images/tick.png";
 		else
-			fString += "images/notick.png";
+			fString += "/images/notick.png";
 		fString += "' class='check" + _pos + "'>";
 
 		$(".fc" + _pos).css( {
@@ -130,9 +130,9 @@ function drawFilter(_pos) {
 					var fString = "<img src='";
 
 					if (filter[$(this).attr("filter")].value)
-						fString += "images/tick.png";
+						fString += "/images/tick.png";
 					else
-						fString += "images/notick.png";
+						fString += "/images/notick.png";
 					fString += "' class='check" + _pos + "'>";
 
 					$(this).html(fString);
@@ -178,15 +178,15 @@ function drawFilter(_pos) {
 		$(".fc" + _pos).html(fString);
 
 		if (filter[_pos].gg)
-			$(".g" + _pos).html("<img src=images/filter_gg.png>")
+			$(".g" + _pos).html("<img src=/images/filter_gg.png>")
 		else
-			$(".g" + _pos).html("<img src=images/filter_g.png>")
+			$(".g" + _pos).html("<img src=/images/filter_g.png>")
 		
 			
 		if (filter[_pos].kg)
-			$(".k" + _pos).html("<img src=images/filter_kg.png>")
+			$(".k" + _pos).html("<img src=/images/filter_kg.png>")
 		else
-			$(".k" + _pos).html("<img src=images/filter_k.png>")
+			$(".k" + _pos).html("<img src=/images/filter_k.png>")
 		
 		//Klickfunktion Kleiner/Größergleich-Piktogramme
 		$(".g" + _pos).attr("filter", _pos).click(
@@ -194,9 +194,9 @@ function drawFilter(_pos) {
 					filter[$(this).attr("filter")].gg = !filter[$(this).attr(
 							"filter")].gg;
 					if (filter[$(this).attr("filter")].gg)
-						$(this).html("<img src=images/filter_gg.png>");
+						$(this).html("<img src=/images/filter_gg.png>");
 					else
-						$(this).html("<img src=images/filter_g.png>");
+						$(this).html("<img src=/images/filter_g.png>");
 					
 					dataView.refresh();
 					$("#sum").html(sumHtml());
@@ -206,9 +206,9 @@ function drawFilter(_pos) {
 					filter[$(this).attr("filter")].kg = !filter[$(this).attr(
 							"filter")].kg;
 					if (filter[$(this).attr("filter")].kg)
-						$(this).html("<img src=images/filter_kg.png>");
+						$(this).html("<img src=/images/filter_kg.png>");
 					else
-						$(this).html("<img src=images/filter_k.png>");
+						$(this).html("<img src=/images/filter_k.png>");
 					
 					dataView.refresh();
 					$("#sum").html(sumHtml());

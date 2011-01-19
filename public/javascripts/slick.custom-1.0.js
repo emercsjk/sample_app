@@ -195,13 +195,11 @@ $(function() {
 	// Daten laden
 
 	// Loader-Span basteln und positionieren
-	loader = $(
-			"<span class='loading-indicator'><label>Einstellungen laden...</label></span>")
-			.appendTo(document.body);
+	$("#loader").html("<span class='loading-indicator'><label>Einstellungen laden...</label></span>");
 	var _h = $("#myGrid").height();
 	var _w = $("#myGrid").width();
 
-	loader.css("position", "absolute").css("top", _h / 2).css("left", _w / 2);
+	$("#loader").css("position", "absolute").css("top", _h / 2).css("left", _w / 2);
 
 	// Settings (Cols) laden, Callback lädt die Daten
 	loadSettings();
@@ -270,11 +268,10 @@ $(function() {
 		columns = [];
 
 		$("#myGrid").html("");
-		loader.show();
 		$.ajax( {
 			url : "/cols.php",
 			success : function(_cols) {
-				loader.html("<label>Daten laden...</label>");
+				$("#loader").html("<label>Daten laden...</label>");
 				columns = JSON.parse(_cols);
 
 				for (i = 0; i < columns.length; i++) {
@@ -300,8 +297,7 @@ $(function() {
 						"cols" : $("#loadcols").attr("value")
 					},
 					success : function(_data) {
-						loader
-								.html("<label class='loaderparse'>Parse Daten...</label>");
+						$("#loader").html("<label class='loaderparse'>Parse Daten...</label>");
 						try {
 
 							data = JSON.parse(_data);
@@ -313,7 +309,7 @@ $(function() {
 							alert("JSON-Parsing abgebrochen. Fehler: " + e);
 
 						}
-						loader.hide();
+						$("#loader").hide();
 						// Tabelle um interne ID-Spalte erweitern
 						// zwingend erforderlich für dataView und Ajax-Requests!
 						// Achtung: Überschreibt eventuelle id-Column in data

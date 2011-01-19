@@ -528,7 +528,7 @@ if (!jQuery.fn.drag) {
 
                 var hfilter = "";
                 if (m.filter) 
-                	hfilter = "<span class='hf" + m.id + "'><img src='images/filter.gif'></span>";
+                	hfilter = "<span class='hf" + m.id + "'><img src='/images/filter.gif'></span>";
 
                 
                 

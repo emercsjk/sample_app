@@ -11,7 +11,7 @@
 
 .cell-filter {
 	
-	background: white url('../images/header-columns-filter-bg.gif') repeat-x center bottom ! important;
+	background: white url('/images/header-columns-filter-bg.gif') repeat-x center bottom ! important;
 	color: #047aac;
 	font-weight: bold;
 	}
@@ -43,7 +43,7 @@
 
 		.loading-indicator label {
 			padding-left: 20px;
-			background: url('../images/ajax-loader-small.gif') no-repeat center left;
+			background: url('/images/ajax-loader-small.gif') no-repeat center left;
 		}
 
 #saving{
@@ -70,7 +70,7 @@ ul {
     margin-left: 0;
     padding: 0;
     cursor: default;
-    list-style-image: url("../images/arrow_right_spearmint.png");
+    list-style-image: url("/images/arrow_right_spearmint.png");
 }
 
 img {

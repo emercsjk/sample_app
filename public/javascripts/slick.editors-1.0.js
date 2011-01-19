@@ -12,7 +12,7 @@
 
 			// Wert in DataView ebenfalls ändern
 
-			return (_test) ? "<img src='images/tick.png'>" : "";
+			return (_test) ? "<img src='/images/tick.png'>" : "";
 		},
 
 		StateCellEditor : function(args) {
@@ -152,8 +152,8 @@
 		},
 
 		BoolCellFormatter : function(row, cell, value, columnDef, dataContext) {
-			return value ? "<img src='images/tick.png'>"
-					: "<img src='images/notick.png'>";
+			return value ? "<img src='/images/tick.png'>"
+					: "<img src='/images/notick.png'>";
 		},
 
 		TaskNameFormatter : function(row, cell, value, columnDef, dataContext) {
@@ -161,25 +161,6 @@
 			var spacer = "<span style='display:inline-block;height:1px;width:"
 					+ (2 + 15 * dataContext["indent"]) + "px'></span>";
 			return spacer + " <img src='images/expand.gif'>&nbsp;" + value;
-		},
-
-		ResourcesFormatter : function(row, cell, value, columnDef, dataContext) {
-			var resources = dataContext["resources"];
-
-			if (!resources || resources.length == 0)
-				return "";
-
-			if (columnDef.width < 50)
-				return (resources.length > 1 ? "<center><img src='images/user_identity_plus.gif' "
-						: "<center><img src='images/user_identity.gif' ")
-						+ " title='" + resources.join(", ") + "'></center>";
-			else
-				return resources.join(", ");
-		},
-
-		StarFormatter : function(row, cell, value, columnDef, dataContext) {
-			return (value) ? "<img src='images/bullet_star.png' align='absmiddle'>"
-					: "";
 		},
 
 		TextCellEditor : function(args) {
@@ -319,7 +300,7 @@
 				$input.datepicker( {
 					showOn : "button",
 					buttonImageOnly : true,
-					buttonImage : "images/calendar.gif",
+					buttonImage : "/images/calendar.gif",
 					beforeShow : function() {
 						calendarOpen = true;
 					},
@@ -560,68 +541,6 @@
 						msg : "Please enter a valid positive number"
 					};
 
-				return {
-					valid : true,
-					msg : null
-				};
-			};
-
-			this.init();
-		},
-
-		StarCellEditor : function(args) {
-			var $input;
-			var defaultValue;
-			var scope = this;
-
-			function toggle(e) {
-				if (e.type == "keydown" && e.which != 32)
-					return;
-
-				if ($input.css("opacity") == "1")
-					$input.css("opacity", 0.5);
-				else
-					$input.css("opacity", 1);
-
-				e.preventDefault();
-				e.stopPropagation();
-				return false;
-			}
-
-			this.init = function() {
-				$input = $(
-						"<IMG src='images/bullet_star.png' align=absmiddle tabIndex=0 title='Click or press Space to toggle' />")
-						.bind("click keydown", toggle).appendTo(args.container)
-						.focus();
-			};
-
-			this.destroy = function() {
-				$input.unbind("click keydown", toggle);
-				$input.remove();
-			};
-
-			this.focus = function() {
-				$input.focus();
-			};
-
-			this.loadValue = function(item) {
-				defaultValue = item[args.column.field];
-				$input.css("opacity", defaultValue ? 1 : 0.2);
-			};
-
-			this.serializeValue = function() {
-				return ($input.css("opacity") == "1");
-			};
-
-			this.applyValue = function(item, state) {
-				item[args.column.field] = state;
-			};
-
-			this.isValueChanged = function() {
-				return defaultValue != ($input.css("opacity") == "1");
-			};
-
-			this.validate = function() {
 				return {
 					valid : true,
 					msg : null
