@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Testing</title>
+<link rel="stylesheet"
+	href="css/start/jquery-ui-1.8.6.custom.css" type="text/css"
+	media="screen" charset="utf-8" />
+<script language="JavaScript" src="lib/jquery-1.4.2.min.js" charset="utf-8"></script>
+<script language="JavaScript" src="lib/jquery-ui-1.8.6.custom.min.js" charset="utf-8"></script>
+<script language="JavaScript" src="lib/jquery.event.drag-2.0.min.js" charset="utf-8"></script>
+
+</head>
+<script type="text/javascript">
+	var slider1Value		= 4;
+	var slider1Stepping		= 1;
+	var slider1Min			= 1;
+	var slider1Max			= 2500;
+
+	$(document).ready(function(){
+		$("#example").slider({
+			'stepping': slider1Stepping,
+			'minValue': slider1Min, 
+			'maxValue': slider1Max,
+			'startValue': [slider1Value], 
+			'slide': function(e, ui){ 
+				$('.slider-input').val(ui.value);
+			}
+		});
+		
+		$(".slider-input").attr("value",slider1Value);
+		
+		$('.slider-input').blur(function(){
+			var slider1Value = +this.value; 
+			if(slider1Value >= slider1Min && slider1Value <= slider1Max){
+				$('#example').slider('moveTo',slider1Value);
+			}else{
+				alert('Please enter a value between '+slider1Min+' and '+slider1Max);
+				return false;
+			}
+		});
+	});
+</script>
+
+<div id="example" class="ui-slider-1" style="margin:10px;">
+	<div class="ui-slider-handle"></div>
+</div>
+<input type="text" class="slider-input" id="slider-input" />
