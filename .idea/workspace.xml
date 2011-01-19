@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b3dcb7fd-a954-4a0c-9e62-63edeae198e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/report.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/report.html.erb" />
     </list>
     <ignored path="sample_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,34 +30,16 @@
       <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="33" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pages_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="3" selection-start="256" selection-end="256" vertical-scroll-proportion="0.37046006">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="15" selection-start="312" selection-end="312" vertical-scroll-proportion="-5.230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="29" selection-start="121" selection-end="121" vertical-scroll-proportion="-1.9615384">
+            <state line="24" column="31" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.44625">
               <folding />
             </state>
           </provider>
@@ -112,9 +91,9 @@
         <option value="$PROJECT_DIR$/public/javascripts/slick.filter-1.0.js" />
         <option value="$PROJECT_DIR$/public/javascripts/slick.editors-1.0.js" />
         <option value="$PROJECT_DIR$/app/views/pages/report.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -271,9 +250,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="Favorites" />
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -517,14 +496,14 @@
       <method />
     </configuration>
     <list size="8">
-      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: sample_app" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: sample_app" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.All specs in: spec" />
-      <item index="5" class="java.lang.String" itemvalue="Ruby.pages_controller" />
-      <item index="6" class="java.lang.String" itemvalue="Ruby.spec_helper" />
-      <item index="7" class="java.lang.String" itemvalue="RSpec.pages_controller_spec" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.All specs in: spec" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.pages_controller" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.spec_helper" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.pages_controller_spec" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="6" class="java.lang.String" itemvalue="Rails.Production: sample_app" />
+      <item index="7" class="java.lang.String" itemvalue="Rails.Development: sample_app" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -609,112 +588,86 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="300" selection-end="300" vertical-scroll-proportion="0.1316129">
-          <folding />
-        </state>
+        <state line="6" column="41" selection-start="300" selection-end="300" vertical-scroll-proportion="0.1316129" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="19" selection-start="118" selection-end="118" vertical-scroll-proportion="0.08232445">
-          <folding />
-        </state>
+        <state line="4" column="19" selection-start="118" selection-end="118" vertical-scroll-proportion="0.08232445" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.2675545">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="326" selection-end="326" vertical-scroll-proportion="0.2675545" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/slick.grid-1.4.3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="530" column="78" selection-start="24649" selection-end="24650" vertical-scroll-proportion="0.9568528">
-          <folding />
-        </state>
+        <state line="530" column="78" selection-start="24649" selection-end="24650" vertical-scroll-proportion="0.9568528" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/slick.custom-1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="46" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="33" column="46" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/slick.editors-1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="562" selection-end="562" vertical-scroll-proportion="0.5177665">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="562" selection-end="562" vertical-scroll-proportion="0.5177665" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/slick.custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="23" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.34987894">
-          <folding />
-        </state>
+        <state line="107" column="23" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.34987894" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/slick.filter-1.0.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="305" column="0" selection-start="7772" selection-end="7772" vertical-scroll-proportion="0.87265915">
-          <folding />
-        </state>
+        <state line="305" column="0" selection-start="7772" selection-end="7772" vertical-scroll-proportion="0.87265915" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/report.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="63" selection-start="523" selection-end="523" vertical-scroll-proportion="0.3825">
+        <state line="18" column="63" selection-start="523" selection-end="523" vertical-scroll-proportion="0.3825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="258" selection-end="258" vertical-scroll-proportion="0.108005084" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="257" selection-end="257" vertical-scroll-proportion="0.39104116">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+        <state line="11" column="0" selection-start="225" selection-end="225" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="15" selection-start="312" selection-end="312" vertical-scroll-proportion="-5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="29" selection-start="121" selection-end="121" vertical-scroll-proportion="-1.9615384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="256" selection-end="256" vertical-scroll-proportion="0.37046006">
+        <state line="24" column="31" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.44625">
           <folding />
         </state>
       </provider>
