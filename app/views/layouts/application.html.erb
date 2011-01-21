@@ -8,6 +8,11 @@
     <META HTTP-EQUIV="EXPIRES" CONTENT="0">
     <title><%= title %></title>
 
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
 
@@ -44,6 +49,21 @@
 
 </head>
 <body>
-<%= yield %>
+    <div class="container">
+        <header>
+            <%= image_tag("onmacon_logo.gif", :alt => "OnMaCon", :class => "round") %>
+                <nav class="round">
+                   <ul>
+                        <li><%= link_to "Home", '#' %></li>
+                        <li><%= link_to "Help", '#' %></li>
+                        <li><%= link_to "Sign in", '#' %></li>
+                   </ul>
+                  <hr>
+                </nav>
+        </header>
+        <section class="round">
+            <%= yield %>
+        </section>
+     </div>
 </body>
 </html>
