@@ -1,5 +1,6 @@
 class WebserviceController < ApplicationController
-  def request
+  def req
+
   end
 
 end

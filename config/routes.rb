@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  get "webservice/request"
+  get "webservice/req"
 
   get "pages/home"
   get "pages/contact"

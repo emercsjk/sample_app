@@ -2,9 +2,9 @@ require 'spec_helper'
 
 describe WebserviceController do
 
-  describe "GET 'request'" do
+  describe "GET 'req'" do
     it "should be successful" do
-      get 'request'
+      get 'req'
       response.should be_success
     end
   end
