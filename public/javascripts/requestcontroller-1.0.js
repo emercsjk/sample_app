@@ -59,7 +59,7 @@ function RCsendRequest(_action, _data) {
 	this.requests.push(req);
 	rc.idle();
 	$.ajax( {
-		url : 'webservice.php',
+		url : '/webservice/req',
 		type : 'POST',
 		data : req.request,
 		success : function(data) {
@@ -79,7 +79,9 @@ function RCupdateRequest(id, data) {
 	for (n in this.requests) {
 		if (this.requests[n].request["id"] == id) {
 			this.requests[n].status = 1;
-			this.requests[n].response = data;
+            //_data = JSON.parse(data);
+            _data = data["id"] + ": Statuscode " + data["statuscode"]
+			this.requests[n].response = "R: " + _data;
 		}
 	}
 }

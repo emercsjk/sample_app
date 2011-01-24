@@ -1,11 +1,11 @@
 SampleApp::Application.routes.draw do
-  get "webservice/req"
-
   get "pages/home"
   get "pages/contact"
   get "pages/about"
   get "pages/report"
-  
+
+  post "webservice/req"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
