@@ -1,4 +1,4 @@
-# Testen mit RSpec ist echt cool!
+# Testen mit RSpec ist cool!
 
 require 'spec_helper'
 
